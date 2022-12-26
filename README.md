@@ -48,3 +48,17 @@ step 10
 ```code
 groups
 ```
+## Next: Install Docker Compose
+step 11
+```code
+mkdir -p ~/.docker/cli-plugins/
+```
+step 12
+```code
+curl -SL https://github.com/docker/compose/releases/download/v2.3.3/docker-compose-linux-x86_64 -o ~/.docker/cli-plugins/docker-compose
+```
+#
+step 13
+```code
+chmod +x ~/.docker/cli-plugins/docker-compose
+```
