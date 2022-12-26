@@ -1,4 +1,24 @@
 # howto install docker on ubuntu server 22.04 LTS
+config ip address:
+```code
+network:
+  ethernets:
+    enp2s0f0:
+      dhcp4: false
+      addresses:
+      - 192.168.13.2/24
+      routes:
+      - to: default
+        via: 192.168.13.1
+      nameservers:
+        addresses:
+        - 1.1.1.1
+        - 8.8.8.8
+        - 9.9.9.9
+        search: []
+  version: 2
+```
+#
 step 1
 ```code
 sudo apt update
